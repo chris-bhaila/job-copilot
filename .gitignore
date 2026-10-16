@@ -1,0 +1,33 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Vector store / generated data (regeneratable from resume_data.py + ingestion)
+backend/data/chroma/
+
+# Eval outputs (keep the test set itself, ignore generated run artifacts)
+backend/eval/results/*
+!backend/eval/results/.gitkeep
+
+# Logs
+*.log
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Docker
+*.pid
+
+# Node (only if you add any JS tooling later, e.g. a Tailwind build step)
+node_modules/
